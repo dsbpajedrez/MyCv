@@ -1,5 +1,16 @@
 :root{
     --color-encabezado:#f09c1d;
+    --color-sombra-principal:rgba(169, 180, 213, 0.882);
+    --color-sombra-estudios:rgba(241, 59, 59, 0.989);
+    --color-sombra-familiares:rgba(253, 0, 0, 0.971);
+    --color-sombra-personales:rgba(158, 48, 109, 0.864);
+    --color-sombra-cv:rgba(255, 255, 254, 0.864);
+
+    --sombras-boton-principal: var(--color-sombra-principal) 0px 20px 30px -10px;
+    --sombras-boton-estudios: var(--color-sombra-estudios) 0px 20px 30px -10px;
+    --sombras-boton-familiares: var(--color-sombra-familiares) 0px 20px 30px -10px;
+    --sombras-boton-personales: var(--color-sombra-personales) 0px 20px 30px -10px;
+    --sombras-boton-cv: var(--color-sombra-cv) 0px 20px 30px -10px;
 }
 html{
     max-width: 1024px;
@@ -41,17 +52,13 @@ h3{
     font-size: 1.9rem;
 }
 img{
-    border: 1px solid rgba(0, 0, 0, 0.35);
+    border: 10px solid rgba(0, 0, 0, 0.35);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 ul{
     list-style: none;
 }
-li a{
-    text-decoration: none;
-    color: red;
-    font-size: 1.5rem;
-}
+
 .principal, .estudios, .experiencia, .familiares, .personales{
     background-color: #707c94;
 }
@@ -68,7 +75,37 @@ nav ul{
     min-height: 150px;
     padding: 0.5rem;
 }
-nav ul li a{
-    color: rgb(192, 205, 19);
-    text-decoration: underline;
+
+.link-principal{
+    color:red;
+}
+button{
+    padding:1rem;
+    border:1px solid var(--color-encabezado);
+    background-color: #662a69;
+    border-radius: 1rem ;
+    
+}
+.link-principal:hover{
+    box-shadow: var(--sombras-boton-principal);
+}
+.link-estudios:hover{
+    box-shadow: var(--sombras-boton-estudios);
+}
+.link-familiares:hover{
+    box-shadow: var(--sombras-boton-familiares);
+}
+.link-personales:hover{
+    box-shadow: var(--sombras-boton-personales);
+}
+.link-experiencia:hover{
+    box-shadow: var(--sombras-boton-personales);
+}
+.link-cv:hover{
+    box-shadow: var(--sombras-boton-cv);
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
