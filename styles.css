@@ -56,10 +56,10 @@ li a{
     background-color: #707c94;
 }
 
-p,h2, h3{
+p, h3{
     color: white;
 }
-h1, figcaption{
+h1,h2, figcaption{
     color: var(--color-encabezado);
 }
 nav ul{
