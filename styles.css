@@ -109,3 +109,11 @@ a{
     text-decoration: none;
     font-size: 1.5rem;
 }
+#theme{
+    padding:1rem;
+    border-radius: 1rem;
+    border:1px solid var(--color-encabezado);
+    background-color: #a83242;
+    color: white;
+    box-shadow: #a83242 0px 22px 70px 4px;
+}
