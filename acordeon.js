@@ -4,6 +4,11 @@ window.addEventListener('load',()=>{
     
     titulo.forEach((item,idx)=>{
         item.addEventListener('click',()=>{
+            despliegue.forEach(bloque=>{
+                if(despliegue[idx]!=bloque) bloque.classList.remove('activo')
+            })
+        })
+        item.addEventListener('click',()=>{
             despliegue[idx].classList.toggle('activo')
         })
     })
