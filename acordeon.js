@@ -1,10 +1,14 @@
 window.addEventListener('load',()=>{
-    const acordeon = document.querySelectorAll('.acordeon');
-    const despliegue = document.querySelectorAll('.encoge');
-    acordeon.forEach((item,idx),()=>{
-        item.addEventListener('clic',()=>{
-            despliegue[idx].classList.remove('despliegue')
+    const acordeon = document.querySelector('.acordeon');
+    const despliegue = document.querySelectorAll('.bloque');
+    const titulo = document.querySelectorAll('.titulo')
+    
+    titulo.forEach((item,idx)=>{
+        item.addEventListener('click',()=>{
+       
+
+            despliegue[idx].classList.toggle('activo')        
+
         })
-        
     })
 })
